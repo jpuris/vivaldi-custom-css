@@ -1,0 +1,50 @@
+.mainbar .toolbar-mainbar,
+.mainbar .toolbar-mainbar .window-buttongroup,
+.mainbar .toolbar-mainbar .button-toolbar button,
+.mainbar .toolbar-mainbar .toolbar-extensions,
+.mainbar .toolbar-mainbar .toolbar-extensions .button-toolbar button {
+    height: calc(30px / var(--uiZoomLevel)) !important;
+    min-height: unset !important;
+}
+
+#browser.mac .window-buttongroup.on-mainbar {
+  display: none;
+}
+
+#browser.mac #header {
+  display: none;
+}
+
+#browser.mac .mainbar {
+  margin-top: -2px;
+  padding-left: 62px;
+}
+
+#browser.mac.address-bottom #main > .mainbar {
+  order: 0;
+}
+
+#browser.mac.address-bottom #main .above .OmniDropdown {
+  top: inherit;
+  bottom: unset;
+}
+
+.extension-popup.bottom {
+  bottom: unset;
+  top: 40px !important;
+}
+
+.extension-popup.bottom:before {
+  top: -13px;
+  bottom: unset;
+  left: var(--anchorPosition);
+  border-bottom-color: var(--colorBorder);
+  border-top-color: unset;
+}
+
+.extension-popup.bottom:after {
+  top: -12px;
+  bottom: unset;
+  left: var(--anchorPosition);
+  border-bottom-color: var(--colorBgLight);
+}
